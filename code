@@ -168,7 +168,7 @@ def get_graph(chart, year, children1, children2, c3, c4, c5):
             
             # TASK5: Average flight time by reporting airline
             # Enter your code below. Make sure you have correct formatting.
-            carrier_fig = px.line(line_data, x='Month', y='AirTime', 
+          line_fig = px.line(line_data, x='Month', y='AirTime', 
                                     color='Reporting_Airline',
                                     title=' Average monthly flight time (minutes) by airline.'
                                 )
@@ -193,7 +193,7 @@ def get_graph(chart, year, children1, children2, c3, c4, c5):
             tree_fig = px.treemap(tree_data, path=['DestState', 'Reporting_Airline'], 
                                   values='Flights',
                                   color='Flights',
-                                  color_continuous_scale='RdBU',
+                                  color_continuous_scale='RdBu',
                                   title='Flight count by airline to destination state'
                                   )
             
